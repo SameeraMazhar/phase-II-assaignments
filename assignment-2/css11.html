@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic layout</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer{
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: grey;
+            padding: 40px;
+        }
+        .sidebar h2{
+            color: white;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color:black;
+            color: beige;
+        }
+        footer {
+            text-align: center;
+            background-color: grey;
+            color:white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>sidebar</h2>
+            <ul>
+                <li><a href="maths">Maths</a></li>
+                <li><a href="#electronics">Electronics</a></li>
+                <li><a href="#computers">Computers</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h2>Main content section</h2>
+            <p>this is the main content of the web page</p>
+        </main>
+
+    </div>
+    <footer>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sequi alias ipsa delectus, doloribus aspernatur? Eos necessitatibus non in dolor consequatur dolorum maxime provident veniam nemo quaerat ea, incidunt iste!</p>
+    </footer>
+    
+</body>
+</html>
